@@ -37,4 +37,22 @@
 		</div>
 	</div>
 </body>
+<script>
+$('#logBtn').click(function(){
+	// var date=new Date().getTime()
+	$.ajax({
+		// type:'post',
+		// url:'./php./xuanran-riji.php',
+
+		url:'./php./rijiqiang.php',
+		data:{
+			message:'留言内容',
+			image:'./data./1241234234.jpg'
+		},
+		success:function(data){
+			console.log(data)
+		}
+	})
+})
+</script>
 </html>
